@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Producto]
+(
+	IdProducto INT NOT NULL IDENTITY(1,1) CONSTRAINT PK_Producto PRIMARY KEY CLUSTERED(IdProducto)
+  , Nombre VARCHAR(50) NOT NULL 
+  , Precio decimal NOT NULL
+  , IVA bit NOT NULL
+  , FechaRegistro DATETIME NOT NULL
+  , UsuarioRegistro VARCHAR(50) NOT NULL
+)
+WITH (DATA_COMPRESSION = PAGE)
+GO
